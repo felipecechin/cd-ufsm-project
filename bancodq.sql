@@ -1,11 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.1.14
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: 09-Jul-2016 às 16:58
--- Versão do servidor: 5.6.17
--- PHP Version: 5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +11,9 @@ SET time_zone = "+00:00";
 --
 -- Database: `bancodq`
 --
+drop database if exists bancodq;
+create database bancodq;
+use bancodq;
 
 -- --------------------------------------------------------
 
@@ -70,7 +65,8 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 --
 
 INSERT INTO `usuario` (`usuarioid`, `email`, `senha`) VALUES
-(1, 'ficechin@hotmail.com', '$2a$08$Cf1f11ePArKlBJomM0F6a.MIRa8oo.Vj1I84evXf96Fz24pcgIHrm');
+(1, 'ficechin@hotmail.com', '$2a$08$c6Bgs2jLM8o3zA4wja0gUuIM1FklFcoVM337fNB02kNjQxYVgIpEq');
+/* senha felipe10 */
 
 --
 -- Constraints for dumped tables

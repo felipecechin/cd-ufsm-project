@@ -1,7 +1,6 @@
 <?php
-define('MYSQL_HOST','localhost');
-define('MYSQL_USER','root');
-define('MYSQL_PASSWORD','');
-define('MYSQL_DATABASE','bancodq');
+const MYSQL_HOST = 'localhost';
+const MYSQL_USER = 'root';
+const MYSQL_PASSWORD = 'root';
+const MYSQL_DATABASE = 'bancodq';
 
-?>

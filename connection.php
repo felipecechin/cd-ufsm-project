@@ -21,12 +21,12 @@ function EscapeBD($dados) {
         $dados = mysqli_real_escape_string($link, $dados);
     } else {
         $arr = $dados;
-        
-        foreach ($arr as $key=>$value){
-            $key = mysqli_real_escape_string($link,$key);
-            $value = mysqli_real_escape_string($link,$value);
-            
-            $dados[$key] = $value;            
+
+        foreach ($arr as $key => $value) {
+            $key = mysqli_real_escape_string($link, $key);
+            $value = mysqli_real_escape_string($link, $value);
+
+            $dados[$key] = $value;
         }
     }
     CloseBD($link);
